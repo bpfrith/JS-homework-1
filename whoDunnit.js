@@ -1,4 +1,4 @@
-var name = 'Ben';
+var name = 'Keith';
 
 var printName = function() {
   console.log('My name is ' + name );
@@ -6,12 +6,12 @@ var printName = function() {
 
 printName();
 
-// prints out My name is Ben
+// prints out My name is Keith
 
-score = 5;
+score = 3;
 
 var result = function() {
-  var score = 5;
+  var score = 3;
   return score;
 };
 
@@ -19,7 +19,7 @@ console.log(result());
 
 // prints out 5
 
-var myAnimals = ['Dog', 'Hamster', 'Ostrich'];
+var myAnimals = ['Ducks', 'Dogs', 'Lions'];
 
 var listAnimals = function() {
   myAnimals = ['Ducks', 'Dogs', 'Lions'];
@@ -70,13 +70,13 @@ console.log(detectiveInfo());
 
 // prints out Poirot
 
-var murderer = 'Peter';
+var murderer = 'Rick';
 
 var outerFunction = function() {
-  var murderer = 'mark';
+  var murderer = 'Marc';
 
   var innerFunction = function() {
-    murderer = 'Nina';
+    murderer = 'Valerie';
   }
 
   innerFunction();
@@ -92,7 +92,7 @@ console.log('the murderer is ', murderer);
 var drink =  "beer"
 
 var stillAtCodeClan = function() {
-  drink = 'borovicka i.e. Devils Piss';
+  drink = 'borovicka a.k.a Devils Piss';
   var footLights = function() {
     var drink = 'beer';
     drink = 'scotch';
