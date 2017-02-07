@@ -5,7 +5,7 @@
 // /* 1.1 */ 1; number
 // /* 1.2 */ "cat"; string
 // /* 1.3 */ true; boolean
-// /* 1.4 */ []; object
+// /* 1.4 */ []; object array
 // /* 1.5 */ {}; object
 // /* 1.6 */ 1.1; number
 // /* 1.7 */ var myVariable; undefined
@@ -56,18 +56,19 @@
 // var animals = ["raccoon","hedgehog","mouse","gerbil"];
 
 // // 5.1. Assign the first element to a variable
-// var annoying = animals[0];
+// var firstAnimal = animals[0];
 // // 5.2. Assign the last element to a variable
-// var noIdeaWhatItIs =  animals[3];
+// var lastAnimal =  animals[animals.length-1];
 // // 5.3. Assign the length of an array to a variable
 // var arrayLength = animals.length;
 // // 5.4. Add an item to the end of the array
-// var newElement = "monkey";
+// var newElement = "Drop Bear";
 // animals.push(newElement);
 // // 5.5. Add an item to the start of the array
-// animals.unshift(newElement);
+// animals.unshift("doge"); //(Narwahl)
 // // 5.6. Assign the index of hedgehog to a variable
 // var indexOfHedgehog = animals.indexOf("hedgehog");
+//var removedAnimal = Animals.splice(1,1)
 
 
 // Section 6
@@ -85,8 +86,8 @@
 //   console.log(vegetables[i]);
 // }
 // // 6.4 Loop again using a "for of"
-// for (var health of vegetables) {
-//   console.log(health);
+// for (var vegof vegetables) {
+//   console.log(veg);
 // }
 
 
@@ -129,12 +130,12 @@ console.log(totalSum(accounts));
 
 // 7.2 Find the amount of money in the account with the largest balance
 
-var findTheRichestAmount =  function(array) {
+var findTheRichest =  function(array) {
   return array.sort(function(first, second) {
     return second.amount - first.amount;
   })[0].amount;
 }
-console.log(findTheRichestAmount(accounts));  
+console.log(findTheRichest(accounts));  
 
 // 7.3 Find the name of the account with the smallest balance
 
@@ -212,11 +213,11 @@ console.log(findTheRichestPersonalHolder(accounts));
 // Assign a variable myPerson to a hash, giving them a name, height, favourite food and an eat method
 
 var myPerson = {
-  name: "Peter",
+  name: "Ben",
   height: 175,
   favouriteFood: "pizza",
   eat: function() {
-    return "ham ham ham";
+    return "nom nom nom";
   }
 }
 

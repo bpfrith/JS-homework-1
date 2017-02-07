@@ -1,4 +1,4 @@
-var name = 'Keith';
+var name = 'Ben';
 
 var printName = function() {
   console.log('My name is ' + name );
@@ -6,20 +6,20 @@ var printName = function() {
 
 printName();
 
-// prints out My name is Keith
+// prints out My name is Ben
 
 score = 5;
 
 var result = function() {
-  var score = 3;
+  var score = 5;
   return score;
 };
 
 console.log(result());
 
-// prints out 3
+// prints out 5
 
-var myAnimals = ['Chickens', 'Cats', 'Rabbits'];
+var myAnimals = ['Dog', 'Hamster', 'Ostrich'];
 
 var listAnimals = function() {
   myAnimals = ['Ducks', 'Dogs', 'Lions'];
@@ -35,13 +35,13 @@ listAnimals();
 // 1 : dogs
 // 2 : lions
 
-var suspectOne = 'Jay';
-var suspectTwo = 'Val';
-var suspectThree = 'Keith';
-var suspectFour = 'Rick';
+var suspectOne = 'Peter';
+var suspectTwo = 'Nina';
+var suspectThree = 'Rory';
+var suspectFour = 'Sam';
 
 var allSuspects = function() {
-  var suspectThree = 'Harvey'
+  var suspectThree = 'Ramsay'
   console.log('Suspects include: ' + suspectOne + ', ' + suspectTwo + ', ' + suspectThree + ', ' + suspectFour)
 };
 
@@ -49,8 +49,8 @@ allSuspects();
 console.log( 'Suspect three is:' + suspectThree );
 
 // prints out
-// Suspects include: Jay, Val, Harvey, Rick
-// Suspect three is: Keith
+// Suspects include: Peter, Nina, Rory, Sam
+// Suspect three is: Ben
 
 var detective = {
   name : 'Ace Ventura',
@@ -62,7 +62,7 @@ var printName = function(detective) {
 };
 
 var detectiveInfo = function() {
-  detective['name'] = 'Poirot'
+  detective['name'] = 'Doig'
   return printName(detective);
 };
 
@@ -70,13 +70,13 @@ console.log(detectiveInfo());
 
 // prints out Poirot
 
-var murderer = 'rick';
+var murderer = 'Peter';
 
 var outerFunction = function() {
-  var murderer = 'marc';
+  var murderer = 'mark';
 
   var innerFunction = function() {
-    murderer = 'valerie';
+    murderer = 'Nina';
   }
 
   innerFunction();
@@ -92,7 +92,7 @@ console.log('the murderer is ', murderer);
 var drink =  "beer"
 
 var stillAtCodeClan = function() {
-  drink = 'borovicka';
+  drink = 'borovicka i.e. Devils Piss';
   var footLights = function() {
     var drink = 'beer';
     drink = 'scotch';
